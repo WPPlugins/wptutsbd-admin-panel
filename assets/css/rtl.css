@@ -1,0 +1,71 @@
+/*
+Plugin Name: Wptutsbd Dashboard
+Plugin URI: http://wptutsbd.com/custom_dashboard_plugin
+Description: wptutsbd Admin/Dashboard Theme
+Author: WPTutsBD
+Version: 1.0
+Author URI: http://WPtutsBD.com
+*/
+
+/* reset */
+.rtl #adminmenushadow, .rtl #adminmenuback {background-image: none}
+.wrap {margin: 0;}
+.update-nag {margin: 0;}
+.folded #wpcontent, .folded #wpfooter {margin-left: 12px;}
+.table th, .table td {text-align: right}
+
+#adminmenuback, #adminmenuwrap {right: 0;}
+#adminmenuwrap {float: right}
+#wpcontent {margin-right: 220px; margin-left: 20px}
+#wpfooter {margin-right: 220px; margin-left: 20px}
+#wpadminbar {left: 0 !important; right: 200px}
+.folded #wpadminbar {right: 42px;}
+#wptutsbd-admin-logo {left: auto; right: 10px; width: 175px;}
+
+#adminmenu div.wp-menu-name, .menu-top.toplevel_page_wpmudev div.wp-menu-name, .menu-top.toplevel_page_incsub_support div.wp-menu-name, .menu-icon-site div.wp-menu-name, .menu-top.toplevel_page_psts-checkout div.wp-menu-name, .menu-top.toplevel_page_cp_main div.wp-menu-name, .menu-top.toplevel_page_mp_st div.wp-menu-name, .menu-top.toplevel_page_customize div.wp-menu-name, .menu-top.toplevel_page_tools div.wp-menu-name, .menu-top.toplevel_page_logout div.wp-menu-name, .menu-top.toplevel_page_business_tools div.wp-menu-name, .menu-top.toplevel_page_jetpack div.wp-menu-name, .menu-icon-feedback div.wp-menu-name, .menu-top.toplevel_page_wpcf7 div.wp-menu-name, .menu-top.toplevel_page_newsletter div.wp-menu-name, .menu-top.toplevel_page_nrelate-main div.wp-menu-name, .menu-top.toplevel_page_wdfb div.wp-menu-name, .menu-icon-forum div.wp-menu-name, .menu-icon-topic div.wp-menu-name, .menu-icon-reply div.wp-menu-name, #menu-posts-download div.wp-menu-name, .menu-top.toplevel_page_sam-list div.wp-menu-name, .menu-top.toplevel_page_wpseo_dashboard div.wp-menu-name, .menu-top.toplevel_page_Wordfence div.wp-menu-name, #toplevel_page_edit-post_type-acf div.wp-menu-name,
+#adminmenu .wp-has-current-submenu ul > li > a, .folded #adminmenu li.menu-top .wp-submenu > li > a, #adminmenu .wp-not-current-submenu li > a {padding-left: 0 !important; padding-right: 33px !important;}
+
+#adminmenu div.wp-menu-image, .menu-top.toplevel_page_wpmudev .wp-menu-image, .menu-top.toplevel_page_incsub_support .wp-menu-image, .menu-icon-site .wp-menu-image, .menu-top.toplevel_page_psts-checkout .wp-menu-image, .menu-top.toplevel_page_cp_main .wp-menu-image, .menu-top.toplevel_page_mp_st .wp-menu-image, .menu-top.toplevel_page_customize .wp-menu-image, .menu-top.toplevel_page_tools .wp-menu-image, .menu-top.toplevel_page_logout .wp-menu-image, .menu-top.toplevel_page_business_tools .wp-menu-image, .menu-top.toplevel_page_jetpack .wp-menu-image, .menu-icon-feedback .wp-menu-image, .menu-top.toplevel_page_wpcf7 .wp-menu-image, .menu-top.toplevel_page_newsletter .wp-menu-image, .menu-top.toplevel_page_nrelate-main .wp-menu-image, .menu-top.toplevel_page_wdfb .wp-menu-image, .menu-icon-forum .wp-menu-image, .menu-icon-topic .wp-menu-image, .menu-icon-reply .wp-menu-image, #menu-posts-download .wp-menu-image, .menu-top.toplevel_page_sam-list .wp-menu-image, .menu-top.toplevel_page_wpseo_dashboard .wp-menu-image, .menu-top.toplevel_page_Wordfence .wp-menu-image, #toplevel_page_edit-post_type-acf .wp-menu-image {left: auto; right: 7px;}
+
+#adminmenu .awaiting-mod, #adminmenu span.update-plugins, #sidemenu li a span.update-plugins {right: auto; left: 12px; margin-left: 0}
+.wp-submenu li a span.update-plugins,
+#adminmenu .wp-submenu span.update-plugins {top: 0;}
+
+.icon32.icon-dashboard:before, #icon-index:before, .icon32.icon-tools:before, #icon-tools:before, #icon-admin:before, .icon32.icon-post:before, #icon-edit:before, #icon-post:before, .icon32.icon-page:before, #icon-edit-pages:before, #icon-page:before, .icon32.icon-media:before, #icon-upload:before, .icon32.icon-comments:before, #icon-edit-comments:before, .icon32.icon-appearance:before, #icon-themes:before, .icon32.icon-plugins:before, #icon-plugins:before, .icon32.icon-users:before, #icon-users:before, #icon-profile:before, #icon-user-edit:before, .icon32.icon-settings:before, #icon-options-general:before,
+#wpadminbar .ab-icon:before, #wp-admin-bar-comments > .ab-item .ab-icon:before, #wp-admin-bar-wp-logo > .ab-item .ab-icon:before, #wp-admin-bar-site-name > .ab-item:before,
+.wp-media-buttons .add_media span.wp-media-buttons-icon:before, .welcome-panel .welcome-icon:before, .curtime #timestamp:before,
+#dashboard-widgets-wrap .hndle > span:before {margin-left: 5px; margin-right: 0}
+
+#wp-admin-bar-site-name > .ab-item:before {margin-right: 0; margin-left: 10px; content: ""}
+#wp-admin-bar-site-name > .ab-item:after {color: #fff;
+	margin-left: 10px;
+	font-family: 'FontAwesome';
+	font-size: 18px; content:"\f015"}
+
+.icon32 {margin: 14px 0 0 12px}
+
+#wp-admin-bar-updates .ab-label, #wp-admin-bar-comments .ab-label {right: auto; left: 0;}
+
+.welcome-panel .welcome-icon {padding: 2px 0 8px 32px}
+ 
+#collapse-button {margin: 0 12px 0 15px;}
+.folded #collapse-button {margin: 0 12px 0 0;}
+#collapse-button:before {
+	content: "\f105";
+}
+.folded #collapse-button:before {
+	content: "\f104";
+}
+
+/* dashboard */
+.postbox .handlediv {left: 0; right: auto}
+.js.rtl .meta-box-sortables .postbox:hover .handlediv {background: none;}
+.js #dashboard-widgets h3 .postbox-title-action {right: auto; left: 40px;}
+
+/* comment */
+.post-com-count,
+strong .post-com-count {background-image: url(../img/bubble_bg-rtl.gif);}
+
+.widefat th input {margin: 0 0 0 5px;}
+.wptutsbd-table-left {float: right; margin-left: 30px; margin-right: 0}
+#wptutsbd-admin-icons-list {float: right}

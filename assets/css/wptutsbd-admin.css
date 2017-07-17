@@ -1,0 +1,547 @@
+/*
+Plugin Name: Wptutsbd Dashboard
+Plugin URI: http://wptutsbd.com/custom_dashboard_plugin
+Description: wptutsbd Admin/Dashboard Theme
+Author: WPTutsBD
+Version: 1.0
+Author URI: http://WPtutsBD.com
+*/
+
+/* reset */
+html,
+body {
+	background: #eee
+}
+a:hover,
+a:focus {
+	outline: none
+}
+
+#adminmenu li.wp-has-submenu.wp-menu-open .wp-submenu,
+#adminmenu > li:last-child,
+#adminmenu .wp-submenu {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0
+}
+
+#wpadminbar .ab-top-secondary {
+	background: none;
+}
+#wpadminbar .quicklinks > ul > li,
+#wpadminbar .quicklinks > ul > li > a,
+#wpadminbar .quicklinks > ul > li > .ab-empty-item,
+#wpadminbar .quicklinks .ab-top-secondary > li,
+#wpadminbar .quicklinks .ab-top-secondary > li > a,
+#wpadminbar .quicklinks .ab-top-secondary > li > .ab-empty-item,
+.postbox .hndle,
+#collapse-button {
+	border: none
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+#catalyst-dynamik-options-nav1,
+#catalyst-dynamik-options-nav2 {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.postbox .hndle,
+.js .postbox h3:hover,
+div.sidebar-name {
+	color: #fff;
+	text-shadow: none
+}
+#screen-meta-links a.show-settings {
+	text-shadow: none
+}
+ #adminmenu .awaiting-mod, #adminmenu .update-plugins, #sidemenu a .update-plugins, #rightnow .reallynow, .widget, #widget-list .widget-top, .postbox, #titlediv, #poststuff .postarea, .stuffbox, #screen-options-link-wrap, #contextual-help-link-wrap, #screen-meta, {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.widefat th {
+	border-bottom: none;
+}
+#menu-settings-column .inside {
+	margin: 0;
+}
+#adminmenu div.wp-menu-name {
+	padding: 0
+}
+#wpadminbar .menupop li:hover,
+#wpadminbar .menupop li.hover,
+#wpadminbar .quicklinks .menupop .ab-item:focus,
+#wpadminbar .quicklinks .ab-top-menu .menupop .ab-item:focus {
+	background: #F4F4F4
+}
+.submitbox .submitdelete {
+	border: none;
+}
+.alignright {
+	text-align: right
+}
+/* */
+
+html.wp-toolbar {
+	padding-top: 40px
+}
+
+#your_custom_css {width: 500px; height: 300px;}
+
+#wp-toolbar img {max-height: 32px; width: auto; margin-top: 4px}
+
+#wptutsbd-admin-logo {
+	position: absolute;
+	left: 10px;
+	top: -30px;
+	z-index: 999;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600
+}
+#wptutsbd-admin-logo img {
+	max-height: 50px;
+	width: auto;
+}
+#wptutsbd-admin-logo a {
+	color: #fff;
+}
+#wptutsbd-admin-logo a:hover {
+	color: #eee;
+}
+.folded #wptutsbd-admin-logo {
+	display: none
+}
+
+#adminmenu div.wp-menu-image,
+.menu-icon-product .wp-menu-image,
+.menu-top.toplevel_page_wpmudev .wp-menu-image,
+.menu-top.toplevel_page_incsub_support .wp-menu-image,
+.menu-icon-site .wp-menu-image,
+.menu-top.toplevel_page_psts-checkout .wp-menu-image,
+.menu-top.toplevel_page_cp_main .wp-menu-image,
+.menu-top.toplevel_page_mp_st .wp-menu-image,
+.menu-top.toplevel_page_customize .wp-menu-image,
+.menu-top.toplevel_page_tools .wp-menu-image,
+.menu-top.toplevel_page_logout .wp-menu-image,
+.menu-top.toplevel_page_business_tools .wp-menu-image,
+.menu-top.toplevel_page_jetpack .wp-menu-image,
+.menu-icon-feedback .wp-menu-image,
+.menu-top.toplevel_page_wpcf7 .wp-menu-image,
+.menu-top.toplevel_page_newsletter .wp-menu-image,
+.menu-top.toplevel_page_nrelate-main .wp-menu-image,
+.menu-top.toplevel_page_wdfb .wp-menu-image,
+.menu-icon-forum .wp-menu-image,
+.menu-icon-topic .wp-menu-image,
+.menu-icon-reply .wp-menu-image,
+#menu-posts-download .wp-menu-image,
+.menu-top.toplevel_page_sam-list .wp-menu-image,
+.menu-top.toplevel_page_wpseo_dashboard .wp-menu-image,
+.menu-top.toplevel_page_Wordfence .wp-menu-image,
+#toplevel_page_edit-post_type-acf .wp-menu-image {
+	top: 0
+}
+
+
+.wrap h2,
+.subtitle {
+	color: #111;
+	text-shadow: none
+}
+.widefat th.sortable,
+.widefat th.sorted {
+	padding: 0 !important;
+}
+.wp-tab-panel,
+.categorydiv div.tabs-panel,
+.customlinkdiv div.tabs-panel,
+.posttypediv div.tabs-panel,
+.taxonomydiv div.tabs-panel {
+	padding: 10px
+}
+#poststuff .tagsdiv .howto {
+	margin: 0;
+}
+.nav-tab:hover,
+.nav-tab-active {
+	border-color: #C4C5C9 #C4C5C9 #eee;
+}
+.nav-tab {
+	border-color: #DFDFDF #DFDFDF #eee;
+}
+div.widgets-sortables,
+#widgets-left .inactive,
+#available-widgets .widget-holder {
+	background: #fff
+}
+.widgets-holder-wrap .sidebar-name-arrow,
+.widgets-holder-wrap.closed .sidebar-name-arrow {
+	display: none
+}
+.widgets-holder-wrap:hover .sidebar-name-arrow,
+.widgets-holder-wrap.closed:hover .sidebar-name-arrow {
+	display: block
+}
+#template textarea {
+	background: #fff
+}
+#your-profile table input,
+.options-general-php table input.regular-text,
+.wptutsbd-admin-form  input.regular-text {
+	width: 20em;
+}
+.wptutsbd-table-left {
+	width: 250px;
+	float: left;
+	margin-right: 30px
+}
+.form-table th.wptutsbd-admin-dashboard-icon-show,
+.form-table td.wptutsbd-admin-dashboard-icon-show {
+	width: 30px;
+}
+.wptutsbd-table-left label {
+	padding-top: 12px
+}
+.wptutsbd-table-left input[type=checkbox] {
+	margin-top: 12px
+}
+.wptutsbd-table-left i:before {
+	font-size: 18px;
+	cursor: pointer
+}
+.wptutsbd-table-left a {
+	display: block;
+	height: 18px;
+	padding: 12px;
+	width: 16px;
+}
+.wptutsbd-table-left a i {
+	color: #222;
+	cursor: pointer
+}
+.wptutsbd-table-left a.active,
+ .wptutsbd-table-left a:hover {
+	background: #0866C6
+}
+.wptutsbd-table-left a.active i,
+ .wptutsbd-table-left a:hover i {
+	color: #fff;
+}
+#wptutsbd-admin-icons-list {
+	float: left
+}
+#wptutsbd-admin-icons-list .span3 {
+	width: 230px;
+	float: left
+}
+#wptutsbd-admin-icons-list .the-icons {
+	overflow: hidden
+}
+strong .post-com-count {
+	background-image: url(../img/bubble_bg.gif);
+}
+.post-com-count:hover span {
+	background-color: #E04545
+}
+/* icons header */
+.icon32.icon-tools,
+#icon-tools,
+#icon-admin {
+	margin-top: 20px;
+}
+/* other icons*/
+.wp-media-buttons .add_media span.wp-media-buttons-icon:before,
+.welcome-panel .welcome-icon:before,
+.curtime #timestamp:before {
+	color: #333;
+	margin-right: 5px;
+	font-family: 'FontAwesome';
+	font-size: 16px;
+}
+.welcome-panel .welcome-icon:before {
+	margin-right: 10px;
+}
+.wp-media-buttons .add_media span.wp-media-buttons-icon,
+.welcome-panel .welcome-icon,
+.curtime #timestamp {
+	background: none !important;
+	background-image: none !important;
+}
+.welcome-panel .welcome-icon,
+.curtime #timestamp {
+	padding-left: 0;
+}
+.wp-media-buttons .add_media span.wp-media-buttons-icon:before {
+	color: #777;
+	content: "\f030";
+}
+.welcome-panel .welcome-write-blog:before {
+	content: "\f044";
+}
+.welcome-panel .welcome-add-page:before {
+	content: "\f067";
+}
+.welcome-panel .welcome-view-site:before {
+	content: "\f015";
+}
+.welcome-panel .welcome-widgets-menus:before {
+	content: "\f0c9";
+}
+.welcome-panel .welcome-comments:before {
+	content: "\f075";
+}
+.welcome-panel .welcome-learn-more:before {
+	content: "\f12e";
+}
+.curtime #timestamp:before {
+	content: "\f073";
+}
+/* dashboard */
+#dashboard-widgets-wrap .hndle > span:before {
+	color: #fff;
+	margin-right: 5px;
+	font-family: 'FontAwesome';
+	font-size: 18px;
+	content: "\f006";
+}
+#dashboard_right_now .hndle > span:before,
+.wptutsbd-admin-dashboard_right_now:before {
+	content: "\f080";
+}
+#dashboard_recent_comments .hndle > span:before,
+.wptutsbd-admin-dashboard_recent_comments:before {
+	content: "\f0e6";
+}
+#dashboard_incoming_links .hndle > span:before,
+.wptutsbd-admin-dashboard_incoming_links:before {
+	content: "\f124";
+}
+#dashboard_plugins .hndle > span:before,
+.wptutsbd-admin-dashboard_plugins:before {
+	content: "\f0c3";
+}
+#dashboard_quick_press .hndle > span:before,
+.wptutsbd-admin-dashboard_quick_press:before {
+	content: "\f044";
+}
+#dashboard_recent_drafts .hndle > span:before,
+.wptutsbd-admin-dashboard_recent_drafts:before {
+	content: "\f044";
+}
+#dashboard_primary .hndle > span:before {
+	content: "\f006";
+}
+#dashboard_secondary .hndle > span:before {
+	content: "\f006";
+}
+/* Custom icons */
+#wptutsbd-admin-icons-list {
+	background: #fff;
+	width: 720px;
+	height: 650px;
+	overflow: auto;
+	padding: 0 20px;
+	font-size: 13px
+}
+#wptutsbd-admin-icons-list h2 {
+	margin: 0 0 10px;
+	padding-top: 0;
+	font-family: 'Open Sans'
+}
+#wptutsbd-admin-icons-list section {
+	padding: 20px 0;
+}
+#wptutsbd-admin-icons-list a {
+	color: #222;
+	display: block
+}
+#wptutsbd-admin-icons-list a:hover {
+	background: #eee
+}
+.the-icons .span3 a [class^="icon-"],
+.the-icons .span3 a [class*=" icon-"] {
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 10px;
+	text-align: right;
+	width: 32px;
+}
+
+/* striking theme */
+.theme_metabox .radios-wrap label {padding-left: 10px}
+.radios-wrap input[type="radio"] {margin-top: 5px;}
+/* gravity forms */
+#floatMenu {background: none !important}
+.add-buttons,
+div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button, div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button:hover, div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button:focus, div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button:active,
+.button-title-link.gf_button_title_active div.add-buttons-title,
+.button-title-link div.add-buttons-title { -moz-border-radius: 0 !important;-webkit-border-radius: 0 !important;border-radius: 0 !important;}
+.button-title-link div.add-buttons-title {border: none !important;}
+.button-title-link div.add-buttons-title {padding: 8px 10px !important}
+ul#gf_form_toolbar_links {background: #fff !important; border-color: #C4C5C9 !important}
+ul#gf_form_toolbar_links li.gf_form_toolbar_settings a, ul#gf_form_toolbar_links li.gf_form_toolbar_editor a, ul#gf_form_toolbar_links li.gf_form_toolbar_notifications a, ul#gf_form_toolbar_links li.gf_form_toolbar_entries a, ul#gf_form_toolbar_links li.gf_form_toolbar_preview a, ul#gf_form_toolbar_links li.gf_form_toolbar_results a {background: none !important; padding: 0 !important}
+
+li.add_field_button_container a.tooltip_left,li.add_field_button_container a.tooltip_bottomleft,
+a.tooltip, a.tooltip_left, a.tooltip_bottomleft {
+	text-indent: 0 !important; height: 17px !important; width: 19px !important; overflow: hidden !important
+}
+
+ul#gf_form_toolbar_links li.gf_form_toolbar_settings a:before, ul#gf_form_toolbar_links li.gf_form_toolbar_editor a:before, ul#gf_form_toolbar_links li.gf_form_toolbar_notifications a:before, ul#gf_form_toolbar_links li.gf_form_toolbar_entries a:before, ul#gf_form_toolbar_links li.gf_form_toolbar_preview a:before, ul#gf_form_toolbar_links li.gf_form_toolbar_results a:before {
+  margin: 3px 5px 0 0 !important;
+  font-family: 'FontAwesome' !important;
+  font-size: 18px !important;
+	color: #333 !important;
+}
+li.add_field_button_container a.tooltip_left:before, li.add_field_button_container a.tooltip_bottomleft:before,
+a.tooltip:before, a.tooltip_left:before, a.tooltip_bottomleft:before {
+	color: #fff !important;
+	margin-left: 5px !important;
+	font-family: 'FontAwesome' !important;
+	font-size: 16px !important;
+	content: "\f059" !important;
+}
+a.tooltip:before, a.tooltip_left:before, a.tooltip_bottomleft:before { 
+	color: #333 !important;
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_settings a:before {
+	content: "\f013";
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_editor a:before {
+	content: "\f040";
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_notifications a:before {
+	content: "\f11d";
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_entries a:before {
+	content: "\f086";
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_preview a:before {
+	content: "\f002";
+}
+ul#gf_form_toolbar_links li.gf_form_toolbar_results a:before {
+	content: "\f14b";
+}
+
+
+.add-buttons {background: #fff !important; border-color: #C4C5C9 !important}
+.button-title-link div.add-buttons-title,
+div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button {background: #0866C6 !important; color: #fff !important}
+div#add_fields div#floatMenu ul#sidebarmenu1.menu li.add_field_button_container ul li.add-buttons ol.field_type li input.button:hover {background: #1076de !important;}
+
+#adminmenu .toplevel_page_gf_edit_forms .wp-menu-image:before,
+div#gravity-edit-icon:before,
+div#gravity-notification-icon:before,
+div#gravity-entry-icon:before,
+div#gravity-title-icon:before,
+div#gravity-settings-icon:before,
+div#gravity-export-icon:before,
+div#gravity-import-icon:before,
+div#gravity-update-icon:before,
+div#gravity-help-icon:before {
+	content: "\f0c9";
+}
+
+/* Catalyst framework */
+.catalyst-dynamik-option {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.catalyst-css-builder-button-wrap,
+.show-hide-custom-css-builder-styles,
+.catalyst-core-options-wrap h3, .catalyst-dynamik-options-wrap h3, .catalyst-advanced-options-wrap h3, .catalyst-uploader-inner-1col h3, #catalyst-custom-css-builder h3,
+.catalyst-font-option-desc,
+.catalyst-bg-option-desc,
+.catalyst-custom-fonts-button-wrap,
+.catalyst-custom-fonts-button,
+.catalyst-optionbox-inner-2col h4,
+#catalyst-admin-footer {-moz-border-radius: 0 !important;-webkit-border-radius: 0 !important;border-radius: 0 !important;}
+.catalyst-css-builder-button-wrap,
+.catalyst-dynamik-option-desc p, .catalyst-font-option-desc p, .catalyst-bg-option-desc p, .catalyst-border-option-desc p, .catalyst-custom-layout-option-desc p, .catalyst-custom-widget-option-desc p, .catalyst-remove-option-desc p {border: none !important; text-shadow: none;}
+#catalyst-core-options-nav, .catalyst-dynamik-options-nav, #catalyst-responsive-options-nav, #catalyst-advanced-options-nav, #catalyst-custom-css-builder-nav,
+#catalyst-admin-footer {
+	background: #fff !important; border-color: #C4C5C9 !important
+}
+
+.catalyst-css-builder-button-wrap {
+	background: none !important; border: none !important;
+}
+.show-hide-custom-css-builder-styles {
+	background: none !important; background-color: #56AF45 !important; color: #FFF !important; border: none !important;text-shadow: none !important;
+}
+
+.catalyst-core-options-wrap h3, .catalyst-dynamik-options-wrap h3, .catalyst-advanced-options-wrap h3, .catalyst-uploader-inner-1col h3, #catalyst-custom-css-builder h3,
+.catalyst-font-option-desc,
+.catalyst-bg-option-desc,
+.catalyst-border-option-desc,
+.catalyst-dynamik-option-desc,
+.catalyst-custom-fonts-button,
+.catalyst-optionbox-inner-2col h4 {background: #0866C6 !important; color: #fff !important; border: none !important; text-shadow: none !important;}
+.catalyst-font-option-desc > p,
+.catalyst-bg-option-desc > p,
+.catalyst-border-option-desc > p,
+.catalyst-dynamik-option-desc > p {color: #fff !important;}
+
+.tooltip-mark {color: #fff}
+
+#catalyst-floating-save {
+	left: 877px
+}
+
+.catalyst-all-options h4 code,
+.catalyst-all-options h3 code {
+	background: #fff;
+	color: #666;
+}
+
+.catalyst-dynamik-option input.color,
+.catalyst-custom-fonts-button-wrap,
+.catalyst-custom-fonts-button {border: none !important}
+
+.catalyst-dynamik-option-desc p, .catalyst-font-option-desc p, .catalyst-bg-option-desc p, .catalyst-border-option-desc p, .catalyst-custom-layout-option-desc p, .catalyst-custom-widget-option-desc p, .catalyst-remove-option-desc p {padding: 5px 0 5px 5px !important}
+
+.catalyst-font-option-desc p:before,
+.catalyst-bg-option-desc p:before,
+.catalyst-border-option-desc p:before,
+.catalyst-dynamik-option-desc p:before {
+	color: #fff !important;
+	margin-right: 5px !important;
+	font-family: 'FontAwesome' !important;
+	font-size: 16px !important;
+}
+
+.catalyst-font-option-desc p:before {
+	content: "\f031" !important;
+}
+.catalyst-bg-option-desc p:before {
+	content: "\f170" !important;
+}
+.catalyst-border-option-desc p:before {
+	content: "\f096" !important;
+}
+.catalyst-dynamik-option-desc p:before {
+	content: "\f013" !important;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+#wptutsbd-admin-icons-list {
+	width: 500px
+}
+.folded #wptutsbd-admin-icons-list {
+	width: 720px
+}
+}

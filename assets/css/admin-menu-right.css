@@ -1,0 +1,29 @@
+/*
+Plugin Name: Wptutsbd Dashboard
+Plugin URI: http://wptutsbd.com/custom_dashboard_plugin
+Description: wptutsbd Admin/Dashboard Theme
+Author: WPTutsBD
+Version: 1.0
+Author URI: http://WPtutsBD.com
+*/
+
+#adminmenuback, #adminmenuwrap {right: 0;}
+#adminmenuwrap {float: right}
+#wpcontent {margin-right: 210px; margin-left: 25px}
+#wpfooter {margin-right: 230px; margin-left: 25px}
+#wpadminbar {left: 0; right: 200px}
+#wptutsbd-admin-logo {left: auto; right: 10px; width: 175px;}
+
+#adminmenu div.wp-menu-name, .menu-top.toplevel_page_wpmudev div.wp-menu-name, .menu-top.toplevel_page_incsub_support div.wp-menu-name, .menu-icon-site div.wp-menu-name, .menu-top.toplevel_page_psts-checkout div.wp-menu-name, .menu-top.toplevel_page_cp_main div.wp-menu-name, .menu-top.toplevel_page_mp_st div.wp-menu-name, .menu-top.toplevel_page_customize div.wp-menu-name, .menu-top.toplevel_page_tools div.wp-menu-name, .menu-top.toplevel_page_logout div.wp-menu-name, .menu-top.toplevel_page_business_tools div.wp-menu-name, .menu-top.toplevel_page_jetpack div.wp-menu-name, .menu-icon-feedback div.wp-menu-name, .menu-top.toplevel_page_wpcf7 div.wp-menu-name, .menu-top.toplevel_page_newsletter div.wp-menu-name, .menu-top.toplevel_page_nrelate-main div.wp-menu-name, .menu-top.toplevel_page_wdfb div.wp-menu-name, .menu-icon-forum div.wp-menu-name, .menu-icon-topic div.wp-menu-name, .menu-icon-reply div.wp-menu-name, #menu-posts-download div.wp-menu-name, .menu-top.toplevel_page_sam-list div.wp-menu-name, .menu-top.toplevel_page_wpseo_dashboard div.wp-menu-name, .menu-top.toplevel_page_Wordfence div.wp-menu-name, #toplevel_page_edit-post_type-acf div.wp-menu-name,
+#adminmenu .wp-has-current-submenu ul > li > a, .folded #adminmenu li.menu-top .wp-submenu > li > a, #adminmenu .wp-not-current-submenu li > a {padding-left: 40px !important}
+
+#adminmenu div.wp-menu-image, .menu-top.toplevel_page_wpmudev .wp-menu-image, .menu-top.toplevel_page_incsub_support .wp-menu-image, .menu-icon-site .wp-menu-image, .menu-top.toplevel_page_psts-checkout .wp-menu-image, .menu-top.toplevel_page_cp_main .wp-menu-image, .menu-top.toplevel_page_mp_st .wp-menu-image, .menu-top.toplevel_page_customize .wp-menu-image, .menu-top.toplevel_page_tools .wp-menu-image, .menu-top.toplevel_page_logout .wp-menu-image, .menu-top.toplevel_page_business_tools .wp-menu-image, .menu-top.toplevel_page_jetpack .wp-menu-image, .menu-icon-feedback .wp-menu-image, .menu-top.toplevel_page_wpcf7 .wp-menu-image, .menu-top.toplevel_page_newsletter .wp-menu-image, .menu-top.toplevel_page_nrelate-main .wp-menu-image, .menu-top.toplevel_page_wdfb .wp-menu-image, .menu-icon-forum .wp-menu-image, .menu-icon-topic .wp-menu-image, .menu-icon-reply .wp-menu-image, #menu-posts-download .wp-menu-image, .menu-top.toplevel_page_sam-list .wp-menu-image, .menu-top.toplevel_page_wpseo_dashboard .wp-menu-image, .menu-top.toplevel_page_Wordfence .wp-menu-image, #toplevel_page_edit-post_type-acf .wp-menu-image {left: 17px}
+
+#collapse-button {margin-left: 20px;}
+#collapse-button:before {
+	content: "\f105";
+}
+.folded #collapse-button:before {
+	content: "\f104";
+}
+.update-nag {margin-left: 0;}

@@ -1,0 +1,224 @@
+/*
+Plugin Name: Wptutsbd Dashboard
+Plugin URI: http://wptutsbd.com/custom_dashboard_plugin
+Description: wptutsbd Admin/Dashboard Theme
+Author: WPTutsBD
+Version: 1.0
+Author URI: http://WPtutsBD.com
+*/
+
+@font-face {
+	font-family: 'brandico';
+	src: url('../fonts/font/brandico.eot?88184059');
+	src: url('../fonts/font/brandico.eot?88184059#iefix') format('embedded-opentype'),  url('../fonts/font/brandico.woff?88184059') format('woff'),  url('../fonts/font/brandico.ttf?88184059') format('truetype'),  url('../fonts/font/brandico.svg?88184059#brandico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#wpadminbar * {
+	font: normal 13px/40px sans-serif;
+	color: #fff;
+	text-shadow: none;
+}
+#wpadminbar {
+	color: #fff;
+	font: normal 13px/40px sans-serif;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 200px;
+	right: 0;
+	width: auto;
+	min-width: 400px;
+	z-index: 99999;
+	background: #0866C6;
+}
+#wpadminbar .ab-top-menu > li:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item,
+#wpadminbar .quicklinks .menupop .ab-item:focus,
+#wpadminbar .quicklinks .ab-top-menu .menupop .ab-item:focus {
+	background-image: none;
+	background: #06529E;
+	color: #fff;
+}
+.ab-top-menu .ab-item {
+	position: relative
+}
+#wp-admin-bar-updates .ab-label,
+#wp-admin-bar-comments .ab-label {
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 5px;
+	padding: 0 6px;
+	line-height: 17px;
+	font-size: 9px;
+	font-weight: bold;
+	margin: 0;
+	background: #C00
+}
+#wpadminbar .menupop.hover .ab-label {
+	color: #fff;
+}
+#wpadminbar .quicklinks a,
+#wpadminbar .quicklinks .ab-empty-item,
+#wpadminbar .shortlink-input {
+	height: 40px;
+}
+#wp-admin-bar-site-name > .ab-item {
+	width: 13px;
+	overflow: hidden;
+}
+#wpadminbar .ab-icon {
+	background: none !important;
+	background-image: none !important;
+	margin-top: 0;
+}
+#wp-admin-bar-comments > .ab-item .ab-icon,
+#wp-admin-bar-wp-logo > .ab-item .ab-icon {
+	margin-top: -1px;
+}
+#wpadminbar .ab-icon:before,
+#wp-admin-bar-comments > .ab-item .ab-icon:before,
+#wp-admin-bar-wp-logo > .ab-item .ab-icon:before,
+#wp-admin-bar-site-name > .ab-item:before {
+	color: #fff;
+	margin-right: 5px;
+	font-family: 'FontAwesome';
+	font-size: 18px;
+}
+#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+	font-family: 'brandico';
+	content: "\f31d";
+}
+#wp-admin-bar-site-name > .ab-item:before {
+	content: "\f015";
+	margin-right: 15px;
+}
+#wp-admin-bar-updates > .ab-item .ab-icon:before {
+	content: "\f021";
+}
+#wp-admin-bar-comments > .ab-item .ab-icon:before {
+	content: "\f086";
+}
+#wpadminbar #wp-admin-bar-new-content > .ab-item .ab-icon:before {
+	content: "\f067";
+}
+.folded #wpadminbar {
+	left: 42px;
+}
+.folded #adminmenuback,
+.folded #adminmenuwrap,
+.folded #adminmenu,
+.folded #adminmenu li.menu-top {
+	width: 42px
+}
+.folded #wpcontent,
+.folded #wpfooter{
+	margin-left: 62px;
+}
+
+/* Auto-folding of the admin menu */
+@media only screen and (max-width: 900px) {
+	.auto-fold #wpcontent,
+	.auto-fold #wpfooter {
+		margin-left: 52px;
+	}
+
+	.auto-fold #adminmenuback,
+	.auto-fold #adminmenuwrap,
+	.auto-fold #adminmenu,
+	.auto-fold #adminmenu li.menu-top {
+		width: 42px;
+	}
+
+	.auto-fold #adminmenu .wp-submenu.sub-open,
+	.auto-fold #adminmenu .opensub .wp-submenu,
+	.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+	.auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+	.auto-fold #adminmenu a.menu-top:focus + .wp-submenu,
+	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus + .wp-submenu  {
+		top: -1px;
+		left: 42px;
+	}
+
+	.auto-fold #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+	.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu {
+		border-width: 1px;
+		border-style: solid;
+		position: absolute;
+		top: -1000em;
+	}
+
+	.auto-fold #adminmenu li.menu-top .wp-submenu > li > a {
+		padding-left: 12px;
+	}
+
+	.auto-fold #adminmenu .wp-menu-name {
+		display: none;
+	}
+
+	.auto-fold #adminmenu .wp-submenu-head {
+		display: block;
+	}
+
+	.auto-fold #adminmenu div.wp-menu-image {
+		width: 42px;
+		position: absolute;
+		z-index: 25;
+	}
+
+	.auto-fold #adminmenu a.menu-top {
+		height: 40px;
+	}
+
+	.auto-fold #adminmenu li .wp-menu-arrow {
+		-moz-transform:    translate( 32px );
+		-webkit-transform: translate( 32px );
+		-o-transform:      translate( 32px );
+		-ms-transform:     translate( 32px );
+		transform:         translate( 32px );
+	}
+
+	.auto-fold #adminmenu li .wp-menu-arrow div {
+		display: none;
+	}
+
+	.auto-fold #adminmenu li.current .wp-menu-arrow,
+	.auto-fold #adminmenu li.current .wp-menu-arrow div,
+	.auto-fold #adminmenu li.wp-has-current-submenu .wp-menu-arrow div,
+	.auto-fold #adminmenu li.wp-menu-open .wp-menu-arrow,
+	.auto-fold #adminmenu li a:focus .wp-menu-arrow {
+		display: block;
+	}
+
+	.auto-fold #adminmenu li.wp-menu-open {
+		border: 0 none;
+	}
+
+	.auto-fold #adminmenu li.wp-has-current-submenu {
+		margin-bottom: 1px;
+	}
+
+	.auto-fold #adminmenu .wp-has-current-submenu.menu-top-last {
+		margin-bottom: 0;
+	}
+
+	.auto-fold #collapse-menu span {
+		display: none;
+	}
+	
+	.auto-fold #wpadminbar {left: 42px}
+	
+	.auto-fold #adminmenu div.wp-menu-image {left: 12px}
+	
+	.auto-fold #adminmenu .wp-submenu {position:absolute; left:42px; top: 0}
+	
+	.folded .wp-submenu-head {position: static}
+	#adminmenu .wp-submenu .wp-submenu-head,
+	#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {margin: 0; padding: 0 0 0 12px; background: #0866C6; color: #fff; text-shadow:none}
+	#adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:hover {background: #fff !important; font-weight: normal}
+}
